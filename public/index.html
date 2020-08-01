@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Nutwara Yakit 6104101346">
+
+  <title>profile</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">PROFILE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">ประวัติ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">การศึกษา</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">ติดต่อ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .row>.column {
+        padding: 0 8px;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .column {
+        float: left;
+        width: 25%;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      /* The Close Button */
+      .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .mySlides {
+        display: none;
+      }
+
+      .cursor {
+        cursor: pointer;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      img {
+        margin-bottom: -4px;
+      }
+
+      .caption-container {
+        text-align: center;
+        background-color: black;
+        padding: 2px 16px;
+        color: white;
+      }
+
+      .demo {
+        opacity: 0.6;
+      }
+
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+
+      img.hover-shadow {
+        transition: 0.3s;
+      }
+
+      .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+    </style>
+
+    <body>
+
+      <h2 style="text-align:center">PROFILE</h2>
+
+      <div class="row">
+        <div class="column">
+          <img src="./img/img01.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="./img/img02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="./img/img03.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
+            class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="./img/img04.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
+            class="hover-shadow cursor">
+        </div>
+      </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h1><img id="pf" src="./img/img01.jpg"></h1>
+          <h2>ประวัติส่วนตัว</h2>
+          <p></p>
+          <p>ชื่อ: นางสาวนุชวรา ยะกิจ</p>
+          <p>ชื่ออังกฤษ: MissNutwara Yakit </p>
+          <p>วันเกิด: 2 กุมภาพันธ์ 2543</p>
+          <p>หมู่เลือด: A</p>
+          <p>สัญชาติ: ไทย</p>
+          <p>เชื้อชาติ: ไทย</p>
+          <p>ศาสนา: พุทธ</p>
+          <p></p>ที่อยู่: 258 บ้านแม่เหียะ หมู่ 2 ตำบลแม่แวน อำเภอพร้าว จังหวัดเชียงใหม่ 50190</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>ด้านการศึกษา</h2>
+          <p></p>
+          <p>รหัสประจำตัว:	6104101346</p>
+          <p>คณะ:	วิทยาศาสตร์ </p>
+          <p>สาขา: วิทยาการคอมพิวเตอร์</p>
+          <p>ระดับการศึกษา:	ปริญญาตรี ปกติ </p>
+          <p>ระดับการศึกษา:	ปริญญาตรี ปกติ </p>
+          <p>ชื่อปริญญา:	วิทยาศาสตรบัณฑิต (วิทยาการคอมพิวเตอร์) วิทยาการคอมพิวเตอร์ </p>
+          <p>วิธีรับเข้า:	รับตรง </p>
+          <p>วุฒิก่อนเข้ารับการศึกษา:	3.42 </p>
+          <p>จบการศึกษาจาก:	โรงเรียนพร้าววิทยาคม </p>
+          <p>อาจารย์ที่ปรึกษา:	อาจารย์อรรถวิท ชังคมานนท์ </p>
+          <p>หน่วยกิตคำนวณ:		79 </p>
+          <p>หน่วยกิตที่ผ่าน:		79</p>
+          <p>คะแนนเฉลี่ยสะสม:		3.45</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>ข้อมูลการติดต่อ</h2>
+          <p>ที่อยู่: 258 บ้านแม่เหียะ หมู่ 2 ตำบลแม่แวน อำเภอพร้าว จังหวัดเชียงใหม่ 50190</p>
+          <p>เบอร์โทร: 065-2945025</p>
+          <p>Facebook: Ying Nutwara</p>
+          <p>Instagram: yingnwr</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+</html>
+
+<style>
+  #pf{
+    justify-content: center;
+    display: flex;
+    padding-left: 160px;
+    width: 600px;
+  }
+
+</style>
